@@ -13,6 +13,8 @@
                 'swf'        : '@Url.Content("~/Scripts/uploadify-v3.1/uploadify.swf")',
                 'uploader': '/Home/Upload',
                 'fileSizeLimit': '204800kb',
+                'width': 90,
+                'height':23,
                 'onUploadSuccess': function (file, data, response) {
                     eval("data=" + data);
                     alert('文件 ' + file.name + ' 已经上传成功，并返回 ' + response + ' 保存文件名称为 ' + data.SaveName);
